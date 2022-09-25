@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #212121;
+  color: white;
+  font-family: sans-serif;
+  font-size: 22px;
+  padding: 0 30px;
+}
+
+header,
+main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header > h1 {
+  color: greenyellow;
+  font-size: medium;
+  text-align: center;
+  margin: 30px;
+  font-size: 28px;
+}
+
+#info-w {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  padding: 15px 0;
+  border: 1px solid grey;
+}
+#info-w .btn {
+  background: none;
+  padding: 4px 12px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+#info-w .btn:hover {
+  color: greenyellow;
+  border: 1px solid greenyellow;
+}
+
+#tavoli-w {
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+#tavoli-w .tavolo {
+  flex-grow: 1;
+  text-align: center;
+  margin: 10px;
+  height: 60px;
+  line-height: 60px;
+}
+#tavoli-w .libero {
+  background-color: #333;
+  border-radius: 15px;
+}
+#tavoli-w .libero:hover {
+  background-color: greenyellow;
+}
+#tavoli-w .occupato {
+  background-color: #333;
+  border-radius: 15px;
+}
+#tavoli-w .occupato:hover {
+  background-color: red;
+}
+
+.tavolo:not(.occupato):hover {
+  transform: scale(1.2);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.formItem input {
+  margin-bottom: 10px;
+  width: 300px;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+.formItem ::placeholder {
+  color: white;
+}
+.formItem .btn-p {
+  width: 90px;
+  background: none;
+  padding: 4px 12px;
+  border: 1px solid white;
+  transition: all 0.3s ease-in;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.formItem .btn-p:hover {
+  color: greenyellow;
+  border: 1px solid greenyellow;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking Resturant</title>
+</head>
+<body>
+    <header>
+        <h1>PRENOTA IL TUO TAVOLO</h1>
+    </header>
+
+    <main>
+        <section id="info-w"> 
+            <div id="numeroPersone-w"> <!--NUMERO DI PERSONE DA PRENOTARE-->
+                Persone : <span id="numeroPersone">1</span>
+                <a href="#" id="sub" class="btn">-</a> <!--INCREMENTO-->
+                <a href="#" id="add" class="btn">+</a> <!--DECREMENTO-->
+            </div>  
+            <div>
+                Tavolo selezionato <span id="tavoloSelezionato">-</span>
+            </div>
+        </section>
+
+        <!-- TAVOLI DEL RISTORANTE  -->
+
+        <section id="tavoli-w">
+        </section>
+
+        <!-- STATO DELLA PRENOTAZIONE  -->
+
+        <P id="MessageStatus"></P>
+
+        <!-- FORM  -->
+
+        <form>
+            <div class="formItem">
+                <input type="text" name="nome" class="input" placeholder="Nome" required>
+                <input type="email" name="email" class="input" placeholder="Email" required>
+                <input type="submit" name="submit" id="prenota" class="btn-p" value="PRENOTA">
+            </div>
+        </form>
+    </main>
+
+    <script src="booking.js"></script>
+</body>
+</html>
